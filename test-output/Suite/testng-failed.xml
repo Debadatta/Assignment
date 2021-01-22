@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="test.LoginWithPageFactory">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="test_add_product_to_cart"/>
+        </methods>
+      </class> <!-- test.LoginWithPageFactory -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
