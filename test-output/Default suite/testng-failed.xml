@@ -5,6 +5,7 @@
     <classes>
       <class name="test.LoginWithPageFactory">
         <methods>
+          <include name="teardown"/>
           <include name="setup"/>
           <include name="test_add_product_to_cart"/>
         </methods>

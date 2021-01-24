@@ -2,24 +2,24 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-21T09:36:16Z" name="Suite" finished-at="2021-01-21T09:36:56Z" duration-ms="39699">
+  <suite started-at="2021-01-24T13:17:29Z" name="Default suite" finished-at="2021-01-24T13:18:08Z" duration-ms="39759">
     <groups>
     </groups>
-    <test started-at="2021-01-21T09:36:16Z" name="Test" finished-at="2021-01-21T09:36:56Z" duration-ms="39699">
+    <test started-at="2021-01-24T13:17:29Z" name="Default test" finished-at="2021-01-24T13:18:08Z" duration-ms="39759">
       <class name="test.LoginWithPageFactory">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.LoginWithPageFactory@77659b30]" started-at="2021-01-21T15:06:16Z" name="setup" finished-at="2021-01-21T15:06:36Z" duration-ms="19988" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.LoginWithPageFactory@19b89d4]" started-at="2021-01-24T18:47:29Z" name="setup" finished-at="2021-01-24T18:47:45Z" duration-ms="16151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_add_product_to_cart()[pri:0, instance:test.LoginWithPageFactory@77659b30]" started-at="2021-01-21T15:06:36Z" name="test_add_product_to_cart" finished-at="2021-01-21T15:06:56Z" duration-ms="19254" status="PASS">
+        <test-method signature="test_add_product_to_cart()[pri:0, instance:test.LoginWithPageFactory@19b89d4]" started-at="2021-01-24T18:47:45Z" name="test_add_product_to_cart" finished-at="2021-01-24T18:48:08Z" duration-ms="23328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_add_product_to_cart -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test.LoginWithPageFactory@77659b30]" started-at="2021-01-21T15:06:56Z" name="teardown" finished-at="2021-01-21T15:06:56Z" duration-ms="407" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.LoginWithPageFactory@19b89d4]" started-at="2021-01-24T18:48:08Z" name="teardown" finished-at="2021-01-24T18:48:08Z" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- test.LoginWithPageFactory -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

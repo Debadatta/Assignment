@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import PageFactory.HomePage;
 import PageFactory.LoginPage;
 import PageFactory.MyAccountPage;
+import Lib.Util;
 
 public class LoginWithPageFactory {
 
@@ -52,7 +53,7 @@ public class LoginWithPageFactory {
     @Test(priority=0)
 
     public void test_add_product_to_cart() throws InterruptedException{
-    	
+    	Util util = new Util();
     	Float price;
     	 objHomePage = new HomePage(driver);
     	 objHomePage.clickSignInButton();
@@ -65,22 +66,21 @@ public class LoginWithPageFactory {
     	 // go the next page
     	 
     	 objMyAccountPage = new MyAccountPage(driver);
-    	 Thread.sleep(5);
+    	 util.waitForElement();
     	 objMyAccountPage.clickTshirtsMenu();
-    	 Thread.sleep(5);
-    	 JavascriptExecutor js = (JavascriptExecutor) driver;
-    	 js.executeScript("window.scrollBy(0,500)");
+    	 util.waitForElement();
+    	 util.scrollDown(driver);
     	 objMyAccountPage.clickOnProduct();
-    	 js.executeScript("window.scrollBy(0,500)");
+    	 util.scrollDown(driver);
     	 objMyAccountPage.clickOnAddToCart();
-    	 Assert.assertTrue(objMyAccountPage.getProductAddedMessage().toLowerCase().contains("Product successfully added to your shopping cart"));
-    	 Assert.assertTrue(objMyAccountPage.getProductTitle().toLowerCase().contains("Faded Short Sleeve T-shirts"));
-    	 Assert.assertTrue(objMyAccountPage.getProductAttr().toLowerCase().contains("Orange, S"));
-    	 price = (float) (16.52 * Integer.parseInt(objMyAccountPage.getProductQty()));
-    	 Assert.assertTrue(objMyAccountPage.getProductPrice().toLowerCase().contains("$"+Float.toString(price)));
+    	 Thread.sleep(5000);
+    	 Assert.assertTrue(objMyAccountPage.getProductAddedMessage().toLowerCase().contains("product successfully added to your shopping cart"));
+    	 Assert.assertTrue(objMyAccountPage.getProductTitle().contains("Faded Short Sleeve T-shirts"));
+    	 Assert.assertTrue(objMyAccountPage.getProductAttr().contains("Orange, S"));
+    	 price = (float) (16.51 * Integer.parseInt(objMyAccountPage.getProductQty()));
+    	 Assert.assertTrue(objMyAccountPage.getProductPrice().toString().equals("$"+Float.toString(price)));
     	 objMyAccountPage.clickOnproceedToCheckoutButton();
-    	 js.executeScript("window.scrollBy(0,500)");
-    	 
+    	 	 
     	
     	 
 
