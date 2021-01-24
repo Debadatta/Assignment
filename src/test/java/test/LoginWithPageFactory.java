@@ -15,7 +15,7 @@ import Lib.Util;
 
 public class LoginWithPageFactory {
 
-	String driverPath = "D:\\Project\\JavaMaven\\chromedriver.exe";
+	String driverPath = "./chromedriver.exe";
     
     WebDriver driver;
 
